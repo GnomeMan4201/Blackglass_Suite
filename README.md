@@ -1,25 +1,35 @@
 # BLACKGLASS
 
-## Description
-Advanced Windows payload and launcher framework specializing in stealth beaconing, persistence, and privilege escalation techniques.
+[![Build Status](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/python-ci.yml/badge.svg)](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/python-ci.yml)
+[![Docs](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/docs.yml/badge.svg)](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/docs.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## Overview
+
+*Describe your project here.*
 
 ## Features
-- Collection of PowerShell payloads targeting multiple persistence methods
-- Launcher scripts designed for payload forging and deployment
-- In-depth beacon and shell command handling
-- Automated UAC bypass and registry sleeper scripts
 
-## Assets Preview
-![Demo](./assets/BLACKGLASS_demo.png)
+- Feature 1
+- Feature 2
+- Feature 3
 
-## Installation
+## Setup
+
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ## Usage
-Follow the included scripts for setup and launch. Utilize provided README.md and comments within each script for configuration details.
 
-## Legal Disclaimer
-Intended strictly for research and ethical use only. Ensure authorization before deployment.
+*Explain usage here.*
 
+## Contributing
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+MIT License © 2025 Your Name

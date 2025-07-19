@@ -5,7 +5,7 @@
 
 # BLACKGLASS
 
-The next-gen, AI-powered payload intelligence & adversary simulation suite for red teams, blue teams, and automation-focused hackers.
+ AI powered payload intelligence & adversary simulation suite for red teams, blue teams, and automation focused hackers.
 
 ---
 
@@ -23,9 +23,9 @@ The next-gen, AI-powered payload intelligence & adversary simulation suite for r
 | Script/Module             | Description                                |
 |---------------------------|--------------------------------------------|
 | `blackglass_forge.py`     | Master automation: scoring, flyers, QR, ZIP|
-| `mutate_payload.py`       | AI-driven payload mutation engine          |
+| `mutate_payload.py`       | AI driven payload mutation engine          |
 | `qr_flyer_builder.py`     | HTML flyer & QR generation                 |
-| `zip_exporter.py`         | Auto-package bundles for delivery          |
+| `zip_exporter.py`         | Auto package bundles for delivery          |
 | `beacon_server.py`        | Local stealth beacon monitoring            |
 | `score_payload.py`        | Offline payload scoring (llama.cpp)        |
 | `dashboard.py`            | Dashboard for all payloads/reports         |

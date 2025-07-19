@@ -1,10 +1,3 @@
-# BLACKGLASS
-
-[![Build Status](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/python-ci.yml/badge.svg)](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/python-ci.yml)
-[![Docs](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/docs.yml/badge.svg)](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/docs.yml)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
----
 
 ## Overview
 

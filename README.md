@@ -1,35 +1,51 @@
+<p align="center">
+  <!-- Add your banner here later -->
+  <!-- <img src="assets/blackglass_banner.png" alt="BLACKGLASS Banner" width="600"> -->
+</p>
+
 # BLACKGLASS
 
-[![Build Status](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/python-ci.yml/badge.svg)](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/python-ci.yml)
-[![Docs](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/docs.yml/badge.svg)](https://github.com/GnomeMan4201/BLACKGLASS/actions/workflows/docs.yml)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+The next-gen, AI-powered payload intelligence & adversary simulation suite for red teams, blue teams, and automation-focused hackers.
 
-## Overview
+---
 
-*Describe your project here.*
+## Features at a Glance
 
-## Features
+- **Offline AI scoring, tagging, and stealth recommendations**
+- **Automated payload mutation, packaging, and report generation**
+- **Stealth beacon monitoring, QR code flyers, ZIP delivery**
+- **Kali, Linux, and Termux support**
 
-- Feature 1
-- Feature 2
-- Feature 3
+---
 
-## Setup
+## Command Overview
+
+| Script/Module             | Description                                |
+|---------------------------|--------------------------------------------|
+| `blackglass_forge.py`     | Master automation: scoring, flyers, QR, ZIP|
+| `mutate_payload.py`       | AI-driven payload mutation engine          |
+| `qr_flyer_builder.py`     | HTML flyer & QR generation                 |
+| `zip_exporter.py`         | Auto-package bundles for delivery          |
+| `beacon_server.py`        | Local stealth beacon monitoring            |
+| `score_payload.py`        | Offline payload scoring (llama.cpp)        |
+| `dashboard.py`            | Dashboard for all payloads/reports         |
+| `blackglass_demo.sh`      | Launch demo                                |
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="assets/blackglass_demo.png" alt="BLACKGLASS in action" width="700">
+</p>
+<p align="center"><i>BLACKGLASS: Dashboard, AI scoring, and beacon logs in Termux</i></p>
+
+---
+
+## Quick Start
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+git clone https://github.com/GnomeMan4201/BLACKGLASS_Suite.git
+cd BLACKGLASS_Suite
 pip install -r requirements.txt
-```
-
-## Usage
-
-*Explain usage here.*
-
-## Contributing
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## License
-
-MIT License © 2025 Your Name
+python3 blackglass_forge.py

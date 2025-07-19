@@ -9,7 +9,7 @@
 
 ---
 
-## Features at a Glance
+## Features
 
 - **Offline AI scoring, tagging, and stealth recommendations**
 - **Automated payload mutation, packaging, and report generation**

@@ -4,19 +4,20 @@
   <img src="assets/blackglass_demo.png" alt="BLACKGLASS Demo" width="700">
 </p>
 
-> **BLACKGLASS:** Offline payload scoring, autonomous QR/ZIP flyer creation, and stealth beacon monitoring in Termux and Linux.
+**BLACKGLASS:** Offline payload scoring, autonomous QR/ZIP flyer creation, and stealth beacon monitoring in Termux and Linux.
 
 ---
 
 ## Features at a Glance
 
-- **Master automation:** Scoring, flyer generation, QR, ZIP export
-- **AI-driven payload mutation:** Unique, original, and obfuscated payload creation
-- **HTML flyer & QR generation:** Shareable, stealthy delivery mechanisms
-- **Live beacon monitoring:** See hits in real time, even offline
-- **Fully local/offline:** Works in Termux, Linux, and headless deployments
-- **AI scoring with Llama.cpp:** All payloads scored locally, never sent to the cloud
+- **Master automation:** Scoring, flyer generation, QR, ZIP export  
+- **AI-driven payload mutation:** Unique, original, and obfuscated payload creation  
+- **HTML flyer & QR generation:** Shareable, stealthy delivery mechanisms  
+- **Live beacon monitoring:** See hits in real time, even offline  
+- **Fully local/offline:** Works in Termux, Linux, and headless deployments  
+- **AI scoring with Llama.cpp:** All payloads scored locally, never sent to the cloud  
 
+---
 ---
 
 ## Command Overview

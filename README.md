@@ -14,7 +14,7 @@ It combines automated payload mutation, local offline AI scoring via llama.cpp, 
 
 ---
 
-## Features at a Glance
+## Features
 
 - **Master automation:** End-to-end scoring, flyer generation, QR code creation, and ZIP packaging
 - **AI-driven payload mutation:** Generates unique, obfuscated payload variants to bypass detection
@@ -30,9 +30,9 @@ It combines automated payload mutation, local offline AI scoring via llama.cpp, 
 | Script/Module          | Description                                      |
 |-----------------------|------------------------------------------------|
 | `blackglass_forge.py`  | Master automation: scoring, flyers, QR, ZIP    |
-| `mutate_payload.py`    | AI-driven payload mutation engine                |
+| `mutate_payload.py`    | AI driven payload mutation engine                |
 | `qr_flyer_builder.py`  | HTML flyer & QR code generator                    |
-| `zip_exporter.py`      | Auto-package bundles for delivery                 |
+| `zip_exporter.py`      | Auto package bundles for delivery                 |
 | `beacon_server.py`     | Local stealth beacon monitoring                   |
 | `score_payload.py`     | Offline payload scoring (llama.cpp)               |
 | `dashboard.py`         | Dashboard for all payloads and reports            |

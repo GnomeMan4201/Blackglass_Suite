@@ -1,13 +1,3 @@
-![Blackglass Suite Logo](.github/branding/logo.jpg)
-
-## Demo
-
-![Blackglass Demo](.github/branding/demo.png)
-
-![Blackglass Suite Logo](.github/branding/logo.jpg)
-
-## Demo
-
 ![Blackglass Demo](.github/branding/demo.png)
 
 # Blackglass_Suite - Security Tooling

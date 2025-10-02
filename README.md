@@ -1,3 +1,9 @@
+![Blackglass Suite Logo](.github/branding/logo.jpg)
+
+## Demo
+
+![Blackglass Demo](.github/branding/demo.png)
+
 # Blackglass_Suite - Security Tooling
 
 > **Legal Notice**: For authorized security testing, education, and research only. Users must comply with all applicable laws.

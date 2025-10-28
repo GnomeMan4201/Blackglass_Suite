@@ -1,5 +1,10 @@
 ![Blackglass Suite Logo](.github/branding/logo.jpg)
 
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg) ![License](https://img.shields.io/badge/license-GPL--3.0-green.svg) ![Stars](https://img.shields.io/github/stars/GnomeMan4201/Blackglass_Suite?style=social)
+
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg) ![Stars](https://img.shields.io/github/stars/GnomeMan4201/Blackglass_Suite?style=social)
+
+
 ## Demo
 
 ![Blackglass Demo](.github/branding/demo.png)

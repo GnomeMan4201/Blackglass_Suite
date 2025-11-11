@@ -1,9 +1,4 @@
-# Contributing Guidelines
-
-Thanks for considering contributing! Here’s how to get started:
-
-- Fork the repo and create a feature branch.
-- Follow the coding style used in the project.
-- Write tests for new features or bug fixes.
-- Run all tests and linters before submitting a PR.
-- Open a Pull Request describing your changes clearly.
+# Contributing
+1. Fork the repo and create a feature branch.
+2. Run `bash scripts/run_quality.sh` and `pytest` before committing.
+3. Open a pull request describing your change.

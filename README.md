@@ -48,12 +48,17 @@ Blackglass Suite is a payload delivery and staging toolkit that operates entirel
 
 ## Install
 ```bash
+git clone https://github.com/GnomeMan4201/Blackglass_Suite.git
+cd Blackglass_Suite
+./quickstart.sh
+```
+
 ---
 
 ## Legal
 
-For authorized red team operations and security research in controlled environments only. Unauthorized use is prohibited.
+For authorized security research and red team operations in controlled environments only. Unauthorized use is prohibited.
 
 ---
 
-*zer0DAYSlater // badBANANA research // GnomeMan4201*
+*Blackglass Suite // badBANANA research // GnomeMan4201*

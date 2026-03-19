@@ -1,7 +1,3 @@
-<p align="center">
-  <img src=".github/branding/logo.jpg" alt="Blackglass Suite" width="340"/>
-</p>
-
 # Blackglass Suite
 
 **Offline payload forge — QR delivery, PowerShell staging, and stealth persistence for red team operations.**

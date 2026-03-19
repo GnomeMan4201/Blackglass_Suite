@@ -1,64 +1,59 @@
-![Blackglass Suite Logo](.github/branding/logo.jpg)
+<p align="center">
+  <img src=".github/branding/logo.jpg" alt="Blackglass Suite" width="340"/>
+</p>
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg) ![License](https://img.shields.io/badge/license-GPL--3.0-green.svg) ![Stars](https://img.shields.io/github/stars/GnomeMan4201/Blackglass_Suite?style=social)
+# Blackglass Suite
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg) ![Stars](https://img.shields.io/github/stars/GnomeMan4201/Blackglass_Suite?style=social)
+**Offline payload forge — QR delivery, PowerShell staging, and stealth persistence for red team operations.**
 
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux-blue.svg)](#)
 
-## Demo
+---
 
-![Blackglass Demo](.github/branding/demo.png)
+<p align="center">
+  <img src=".github/branding/demo.png" alt="Blackglass Demo" width="680"/>
+</p>
 
-![Blackglass Suite Logo](.github/branding/logo.jpg)
+---
 
-## Demo
+Blackglass Suite is a payload delivery and staging toolkit that operates entirely offline. It forges QR code payloads, generates HTA launchers, and ships a full PowerShell payload library covering persistence, surveillance, exfiltration, and evasion — all without touching external infrastructure during generation.
 
-![Blackglass Demo](.github/branding/demo.png)
+---
 
-# Blackglass_Suite - Security Tooling
+## Capabilities
 
-> **Legal Notice**: For authorized security testing, education, and research only. Users must comply with all applicable laws.
+**Forge scripts**
+- QR code payload generation (7 forge variants)
+- HTA launcher generation
+- LNK dropper forge
 
-[![CI](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml/badge.svg)](https://github.com/GnomeMan4201/Blackglass_Suite/actions)
-[![Security](https://img.shields.io/badge/Security-Audited-green.svg)](SECURITY.md)
+**PowerShell payload library**
+- `arp_mimic.ps1` — ARP table manipulation
+- `audio_surveillance.ps1` — microphone capture
+- `autorun_persistence.ps1` — registry/startup persistence
+- `beacon_blaster.ps1` — C2 beacon
+- `clipboard_magnet.ps1` / `clipboard_creep.ps1` — clipboard harvesting
+- `dns_ghostpost.ps1` — DNS exfiltration
+- `driveby_uac_bypass.ps1` — UAC bypass
+- `encrypt_and_yeet.ps1` — data encryption and exfil
+- `entropy_logger.ps1` — keystroke entropy capture
+- `exfil.ps1` — data exfiltration
+- `fake_bitlocker.ps1` — credential harvest via fake BitLocker prompt
 
-## Quick Start
+**Integrations**
+- Plugin integration with OWN, badBANANA, and Decoy-Hunter
 
+---
+
+## Install
 ```bash
-git clone https://github.com/GnomeMan4201/Blackglass_Suite.git
-cd Blackglass_Suite
-./quickstart.sh
-```
+---
 
-## Overview
+## Legal
 
-Professional security tool for red team operations and security research.
+For authorized red team operations and security research in controlled environments only. Unauthorized use is prohibited.
 
-## Features
+---
 
-- Enterprise-grade security testing
-- Modular architecture
-- Comprehensive documentation
-- Active maintenance
-
-## Installation
-
-```bash
-# Docker
-docker-compose up -d
-
-# Manual
-pip install -r requirements.txt
-```
-
-## Documentation
-
-Full documentation: [docs/](docs/)
-
-## Security
-
-Report vulnerabilities: [SECURITY.md](SECURITY.md)
-
-## License
-
-GPL-3.0 - See [LICENSE](LICENSE)
+*zer0DAYSlater // badBANANA research // GnomeMan4201*

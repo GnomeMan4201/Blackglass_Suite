@@ -1,3 +1,5 @@
+
+
 # Blackglass Suite
 
 **Offline payload forge — QR delivery, PowerShell staging, and stealth persistence for red team operations.**

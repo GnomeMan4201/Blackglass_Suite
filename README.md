@@ -1,61 +1,135 @@
-
-
 # Blackglass Suite
 
-**Offline payload forge — QR delivery, PowerShell staging, and stealth persistence for red team operations.**
+**Offline payload research forge for controlled red-team labs — QR delivery artifacts, launcher generation, PowerShell research modules, and local workflow integration.**
 
+[![CI](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml/badge.svg)](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux-blue.svg)](#)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux-blue.svg)](#requirements)
 
 ---
 
 <p align="center">
-  <img src=".github/branding/demo.png" alt="Blackglass Demo" width="680"/>
+  <img src=".github/branding/demo.png" alt="Blackglass Suite demo" width="680"/>
 </p>
 
 ---
 
-Blackglass Suite is a payload delivery and staging toolkit that operates entirely offline. It forges QR code payloads, generates HTA launchers, and ships a full PowerShell payload library covering persistence, surveillance, exfiltration, and evasion — all without touching external infrastructure during generation.
+## Overview
+
+Blackglass Suite is a local-first research toolkit for generating and studying delivery/staging artifacts in authorized environments. Generation is performed locally rather than through a hosted control plane, which makes the repository useful for lab work, defensive inspection, repeatable demonstrations, and offline experimentation.
+
+The project groups three areas of work:
+
+- **artifact generation** — QR, HTA, and LNK-oriented forge workflows
+- **PowerShell research modules** — examples covering persistence, collection, staging, exfiltration, and evasion behaviors
+- **ecosystem adapters** — integration points for adjacent badBANANA research tooling
+
+The repository contains dual-use techniques. Treat generated artifacts as lab material and run them only in systems you control or are explicitly authorized to assess.
+
+---
+
+## Requirements
+
+- Python 3.10+ recommended
+- Linux or Termux
+- `git`
+- Python packages declared in `requirements.txt`
+
+A virtual environment is recommended on standard Linux installations.
+
+---
+
+## Quick install
+
+```bash
+git clone https://github.com/GnomeMan4201/Blackglass_Suite.git
+cd Blackglass_Suite
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+For the repository's safe dependency/demo sanity check:
+
+```bash
+bash quickstart.sh
+```
+
+`quickstart.sh` verifies the checkout context and Python environment and installs declared dependencies when needed. It is a **smoke check**, not proof that every generated artifact works in every target environment.
+
+---
+
+## Verify the checkout
+
+CI uses a fail-closed runtime validation path:
+
+```bash
+# When pytest tests are present:
+python -m pytest tests/ -v --tb=short
+
+# Otherwise, compile the active Python source while excluding historical backups:
+python -m compileall -q -x '(^|/)(backup_[^/]+|\.venv|venv)(/|$)' .
+
+# Safe repository smoke check:
+bash quickstart.sh
+```
+
+Bandit is run separately as an **advisory** security scan. It is not used as a hard pass/fail gate because this repository intentionally contains red-team patterns that static analyzers can flag by design. Runtime/install validation itself is not allowed to silently pass on failure.
 
 ---
 
 ## Capabilities
 
-**Forge scripts**
-- QR code payload generation (7 forge variants)
+### Forge scripts
+
+- QR-code payload artifact generation across multiple forge variants
 - HTA launcher generation
-- LNK dropper forge
+- LNK-oriented dropper forge workflows
 
-**PowerShell payload library**
-- `arp_mimic.ps1` — ARP table manipulation
-- `audio_surveillance.ps1` — microphone capture
-- `autorun_persistence.ps1` — registry/startup persistence
-- `beacon_blaster.ps1` — C2 beacon
-- `clipboard_magnet.ps1` / `clipboard_creep.ps1` — clipboard harvesting
-- `dns_ghostpost.ps1` — DNS exfiltration
-- `driveby_uac_bypass.ps1` — UAC bypass
-- `encrypt_and_yeet.ps1` — data encryption and exfil
-- `entropy_logger.ps1` — keystroke entropy capture
-- `exfil.ps1` — data exfiltration
-- `fake_bitlocker.ps1` — credential harvest via fake BitLocker prompt
+### PowerShell research library
 
-**Integrations**
-- Plugin integration with OWN, badBANANA, and Decoy-Hunter
+Representative modules include:
 
----
+| Module | Research behavior |
+|---|---|
+| `arp_mimic.ps1` | ARP manipulation behavior |
+| `audio_surveillance.ps1` | microphone collection behavior |
+| `autorun_persistence.ps1` | startup/registry persistence behavior |
+| `beacon_blaster.ps1` | beaconing behavior |
+| `clipboard_magnet.ps1` / `clipboard_creep.ps1` | clipboard collection |
+| `dns_ghostpost.ps1` | DNS-based transfer behavior |
+| `driveby_uac_bypass.ps1` | UAC-bypass research |
+| `encrypt_and_yeet.ps1` | encryption/exfiltration workflow |
+| `entropy_logger.ps1` | input/entropy collection research |
+| `exfil.ps1` | data-transfer behavior |
+| `fake_bitlocker.ps1` | credential-prompt simulation |
 
-## Install
-```bash
-git clone https://github.com/GnomeMan4201/Blackglass_Suite.git
-cd Blackglass_Suite
-./quickstart.sh
-```
+The module names describe behaviors represented in the repository; they are not claims that a technique will evade a particular current EDR, OS build, or policy configuration.
 
 ---
 
-## Legal
+## Ecosystem integrations
 
-For authorized security research and red team operations in controlled environments only. Unauthorized use is prohibited.
+Blackglass includes integration points for other badBANANA research projects, including OWN, badBANANA, and Decoy-Hunter. These integrations are optional; the repository can still be inspected and smoke-tested independently.
+
+---
+
+## Repository hygiene
+
+Historical `backup_*` directories are retained as snapshots but are excluded from the active-source compile gate. New work should target the current top-level source rather than modifying an old backup copy.
+
+---
+
+## Verification boundary
+
+A green CI run establishes that dependencies install and the configured active-source/test/smoke path completes successfully for that revision. It does not establish operational effectiveness, stealth, compatibility with every target, or authorization to use generated material outside a controlled environment.
+
+---
+
+## License
+
+GPL-3.0. See [LICENSE](LICENSE).
 
 ---
 

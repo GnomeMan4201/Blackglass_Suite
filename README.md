@@ -3,7 +3,7 @@
 **Offline payload research forge for controlled red-team labs — QR delivery artifacts, launcher generation, and PowerShell research modules.**
 
 [![CI](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml/badge.svg)](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux-blue.svg)](#requirements)
 
 ---
@@ -122,7 +122,7 @@ A green CI run establishes that dependencies install and the configured active-s
 
 ## License
 
-GPL-3.0. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
 
 ---
 

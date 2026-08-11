@@ -31,6 +31,17 @@ jobs:
             python -m compileall -q -x '(^|/)(\.venv|venv)(/|$)' .
           fi
 
+      - name: Validate shell script syntax
+        shell: bash
+        run: |
+          while IFS= read -r -d '' script; do
+            echo "bash -n $script"
+            bash -n "$script"
+          done < <(find . -type f -name '*.sh' \
+            -not -path './.venv/*' \
+            -not -path './venv/*' \
+            -print0)
+
       - name: Run quickstart smoke check
         run: bash quickstart.sh
 

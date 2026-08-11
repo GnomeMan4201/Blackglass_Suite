@@ -1,6 +1,6 @@
 # Blackglass Suite
 
-**Offline payload research forge for controlled red-team labs — QR delivery artifacts, launcher generation, PowerShell research modules, and local workflow integration.**
+**Offline payload research forge for controlled red-team labs — QR delivery artifacts, launcher generation, and PowerShell research modules.**
 
 [![CI](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml/badge.svg)](https://github.com/GnomeMan4201/Blackglass_Suite/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
@@ -18,11 +18,10 @@
 
 Blackglass Suite is a local-first research toolkit for generating and studying delivery/staging artifacts in authorized environments. Generation is performed locally rather than through a hosted control plane, which makes the repository useful for lab work, defensive inspection, repeatable demonstrations, and offline experimentation.
 
-The project groups three areas of work:
+The maintained repository groups two areas of work:
 
 - **artifact generation** — QR, HTA, and LNK-oriented forge workflows
 - **PowerShell research modules** — examples covering persistence, collection, staging, exfiltration, and evasion behaviors
-- **ecosystem adapters** — integration points for adjacent badBANANA research tooling
 
 The repository contains dual-use techniques. Treat generated artifacts as lab material and run them only in systems you control or are explicitly authorized to assess.
 
@@ -106,12 +105,6 @@ Representative modules include:
 | `fake_bitlocker.ps1` | credential-prompt simulation |
 
 The module names describe behaviors represented in the repository; they are not claims that a technique will evade a particular current EDR, OS build, or policy configuration.
-
----
-
-## Ecosystem integrations
-
-Blackglass includes integration points for other badBANANA research projects, including OWN, badBANANA, and Decoy-Hunter. These integrations are optional; the repository can still be inspected and smoke-tested independently.
 
 ---
 

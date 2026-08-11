@@ -68,8 +68,8 @@ CI uses a fail-closed runtime validation path:
 # When pytest tests are present:
 python -m pytest tests/ -v --tb=short
 
-# Otherwise, compile the active Python source while excluding historical backups:
-python -m compileall -q -x '(^|/)(backup_[^/]+|\.venv|venv)(/|$)' .
+# Otherwise, compile the active Python source:
+python -m compileall -q -x '(^|/)(\.venv|venv)(/|$)' .
 
 # Safe repository smoke check:
 bash quickstart.sh
@@ -117,7 +117,7 @@ Blackglass includes integration points for other badBANANA research projects, in
 
 ## Repository hygiene
 
-Historical `backup_*` directories are retained as snapshots but are excluded from the active-source compile gate. New work should target the current top-level source rather than modifying an old backup copy.
+Historical working-directory backup snapshots have been removed from the active branch. Git history remains the record of prior repository states; current source and validation paths now operate only on the maintained tree.
 
 ---
 

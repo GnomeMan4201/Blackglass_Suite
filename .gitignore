@@ -11,6 +11,9 @@ build/
 dist/
 *.egg-info/
 
+# Historical working-directory backups
+backup_*/
+
 # Documentation build folder
 docs/_build/
 
